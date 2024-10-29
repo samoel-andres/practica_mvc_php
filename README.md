@@ -33,3 +33,37 @@ Como he mencionado antes, el contenido de este repositorio esta basado en el pat
   - Archivo principal que define la página de inicio que se visualiza de forma predeterminada al iniciar el sitio web.
 
 ## :package: Resultados
+
+Vista inicial, se muestra el formulario para agregar nuevos usuarios y la tabla vacía.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/empty_form.JPG" alt="Vista inicial">
+</p>
+
+Al agregar usuarios nuevos se muestra un mensaje que confirma si fue registrado correctamente o si ocurrio algún error y no se registro, también se actualiza la tabla inmediatamente para que se visualicen los cambios inmediatamente.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/record_added.JPG" alt="Registro agregado">
+</p>
+
+Si se desea actualizar algun dato de los usuarios podemos pulsar el botón "Actualización" que nos dirige a un formulario en el cual debemos colocar la nueva información que queramos.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/form_to_update.JPG" alt="Formulario para actualizar registros">
+</p>
+
+Una vez colocados los nuevos datos debemos pulsar el botón "Guardar", esto actualizará la informacion en la base de datos y nos devolverá a la pantalla principal donde se visualiza nuevamente un mensaje, en este caso confirmando la actualización del registro.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/record_updated.JPG" alt="Registro actualizado">
+</p>
+
+La última acción de un CRUD es eliminar registros de la base, en este caso para eliminar un registro se debe pulsar el botón "Eliminar", con esto se elimina completamente el registro y se muestra un mensaje para confirmar la eliminación.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/record_removed.JPG" alt="Registro eliminado">
+</p>
+
+## :pen: Conclusión
+
+Este proyecto me ha permitido practicar el patrón de arquitectura MVC, además, también he conectado el proyecto a una base de datos en MySQL sencilla. Esto me permite seguir reforzando mi conocimiento sobre de las tecnologias que he usado para desarrollarlo.
