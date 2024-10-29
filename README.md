@@ -4,7 +4,7 @@
 
 Este es un proyecto sencillo usando el patrón MVC (Modelo-Vista-Controlador) y un CRUD con MySQL. La interfaz muestra un formulario que recibe 2 breves datos y un botón cuya funcionalidad es registrar los datos en una tabla de la base de datos. Posteriormente se muestra una tabla en la que se listan todos los registros que se encuentran en la tabla junto a sus respectivas acciones. Para el desarrollo de este proyecto he usado PHP, Bootstrap y MySQL.
 
-### :pen: ¿Que significa CRUD?
+### :pencil: ¿Que significa CRUD?
 
 CRUD son siglas que refieren a las acciones elementales de una base de datos:
 
