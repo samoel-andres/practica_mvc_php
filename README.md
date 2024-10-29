@@ -66,4 +66,4 @@ La última acción de un CRUD es eliminar registros de la base, en este caso par
 
 ## :pen: Conclusión
 
-Este proyecto me ha permitido practicar el patrón de arquitectura MVC, además, también he conectado el proyecto a una base de datos en MySQL sencilla. Esto me permite seguir reforzando mi conocimiento sobre de las tecnologias que he usado para desarrollarlo.
+Este proyecto me ha permitido practicar el patrón de arquitectura MVC, además, también he conectado el proyecto a una base de datos en MySQL sencilla. Esto me permite seguir reforzando mi conocimiento sobre las tecnologias que he usado para desarrollarlo.
