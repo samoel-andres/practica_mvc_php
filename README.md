@@ -1,71 +1,75 @@
-<h1 align="left" width="100%"> :open_book: REGISTRO DE USUARIOS </h1>
+# Práctica MVC PHP
 
 <br><img align="left" src="https://skillicons.dev/icons?i=vscode,php,bootstrap,html,css,mysql,github,git" height="37" alt="Tecnologias"><br><br>
 
-## :pen: Acerca de este proyecto
+Este proyecto es una implementación sencilla del patrón de diseño **MVC** (Modelo-Vista-Controlador) usando **PHP**. El propósito es entender y aplicar este patrón en un proyecto web básico, organizado de forma modular para manejar solicitudes HTTP, procesamiento de datos y presentación de la interfaz de usuario.
 
-Este es un proyecto usando el patrón MVC (Modelo-Vista-Controlador) y un CRUD con MySQL. La interfaz muestra un formulario que recibe 2 datos y un botón cuya funcionalidad es registrar lo que el usuario proporciona en la base de datos. Posteriormente se muestra una tabla en la que se cargan todos los registros que se encuentran en la base junto a sus respectivas acciones. Para el desarrollo de este proyecto he usado PHP, Bootstrap y MySQL.
+## Descripción
 
-### :pencil: ¿Que significa CRUD?
+El proyecto muestra cómo estructurar una aplicación web utilizando el patrón **MVC** en PHP. Con este enfoque, el código se divide en tres componentes principales:
 
-CRUD son siglas que refieren a las acciones elementales de una base de datos:
+- **Modelo (Model)**: Es la parte encargada de la lógica de datos. Aquí se manejan las interacciones con la base de datos y la manipulación de la información.
+- **Vista (View)**: Se encarga de mostrar la información al usuario. Las vistas son archivos HTML que pueden contener datos dinámicos proporcionados por el controlador.
+- **Controlador (Controller)**: Actúa como intermediario entre el Modelo y la Vista. Recibe las solicitudes del usuario, manipula los datos mediante el Modelo, y luego actualiza la Vista.
 
-- **C**reate (crear)
-  - Creación de nuevos registros.
-- **R**ead (leer)
-  - Leer los registros.
-- **U**pdate (actualizar)
-  - Actualización de registros.
-- **D**elete (eliminar)
-  - Eliminación de registros.
+![Interfaz inicial](public/evidence/record_added.JPG)
 
-## :hammer: Estructura del proyecto
+## Características
 
-Como he mencionado antes, el contenido de este repositorio esta basado en el patrón de arquitectura MVC, los archivos y carpetas se agrupan de la siguiente manera:
+- Implementación del patrón de diseño **MVC**.
+- Separación clara de responsabilidades entre el Modelo, la Vista y el Controlador.
+- Soporte para rutas dinámicas a través de URL.
+- Uso de **PHP** para la parte lógica de la aplicación.
+- Estructura modular y extensible.
 
-- **Config**
-  - Se almacenan los arhivos de configuración necesarios para el funcionamiento del proyecto. En este caso también contiene el archivo que hace la conexión a la base de datos.
-- **Controller**
-  - Se encuentran los archivos vitales para el funcionamiento de cada vista. Estos archivos contienen los métodos disponibles para cada interfaz.
-- **Model**
-  - En este lugar se encuentran los archivos cuya función se centra principalmente en las acciones relacionadas a la base de datos, es decir, son los métodos/funciones del CRUD encargados de interactuar directamente con la base.
-- **Resources**
-  - Esta carpeta contiene los archivos principales de las vistas (HTML). Al igual que en otros proyectos he creado un mini motor de plantillas que toma plantillas que contienen lenguaje de marcado HTML con marcadores de posición para datos, lógica y una fuente de datos que proporciona los valores para los marcadores de posición para finalmente representarlo en el navegador. En este caso es muy útil, ya que el proyecto manipula informacion dinámica e interactua con una base de datos.
-- **Index**
-  - Archivo principal que define la página de inicio que se visualiza de forma predeterminada al iniciar el sitio web.
+## Requisitos
 
-## :package: Resultados
+- **PHP** 7.4 o superior.
+- Un servidor web como **Apache** o **Nginx**.
+- Base de datos (si se utiliza, puedes configurar MySQL u otro sistema de base de datos).
 
-Vista inicial, se muestra el formulario para agregar nuevos usuarios y la tabla vacía.
+## Instalación
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/empty_form.JPG" alt="Vista inicial">
-</p>
+Para usar este proyecto, sigue estos pasos:
 
-Al agregar usuarios nuevos se muestra un mensaje que confirma si fue registrado correctamente o si ocurrio algún error y no se registro, también se actualiza la tabla inmediatamente para que se visualicen los cambios inmediatamente.
+1. Clona el repositorio:
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/record_added.JPG" alt="Registro agregado">
-</p>
+   ```bash
+   git clone https://github.com/samoel-andres/practica_mvc_php.git
+   ```
 
-Si se desea actualizar algun dato de los usuarios podemos pulsar el botón "Actualización" que nos dirige a un formulario en el cual debemos colocar la nueva información que queramos.
+2. Navega a la carpeta del proyecto:
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/form_to_update.JPG" alt="Formulario para actualizar registros">
-</p>
+   ```bash
+   cd practica_mvc_php
+   ```
 
-Una vez colocados los nuevos datos debemos pulsar el botón "Guardar", esto actualizará la informacion en la base de datos y nos devolverá a la pantalla principal donde se visualiza nuevamente un mensaje, en este caso confirmando la actualización del registro.
+3. Configura tu servidor web para que apunte al directorio del proyecto, asegurándote de que la configuración del **DocumentRoot** esté correcta (si usas Apache, por ejemplo).
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/record_updated.JPG" alt="Registro actualizado">
-</p>
+4. Si estás utilizando una base de datos, configura el archivo de conexión en el **Modelo** con los detalles correctos (host, usuario, contraseña, nombre de la base de datos).
 
-La última acción de un CRUD es eliminar registros de la base, en este caso para eliminar un registro se debe pulsar el botón "Eliminar", con esto se elimina completamente el registro y se muestra un mensaje para confirmar la eliminación.
+5. Abre el proyecto en tu navegador visitando la URL configurada (por ejemplo, `http://localhost/practica_mvc_php/`).
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/samoel-andres/practica_mvc_php/main/public/evidence/record_removed.JPG" alt="Registro eliminado">
-</p>
+## Uso
 
-## :pen: Conclusión
+Una vez que el servidor esté en funcionamiento, puedes acceder a las diferentes rutas de la aplicación. El controlador correspondiente se encargará de manejar la solicitud y presentar la vista adecuada. Las rutas son gestionadas por el controlador principal.
 
-Este proyecto me ha permitido practicar el patrón de arquitectura MVC, además, también he conectado el proyecto a una base de datos en MySQL sencilla. Esto me permite seguir reforzando mi conocimiento sobre las tecnologias que he usado para desarrollarlo.
+## Estructura del Proyecto
+
+La estructura del proyecto es la siguiente:
+
+```
+practica_mvc_php/
+│
+├── app/                # Lógica principal del proyecto
+│   ├── controllers/    # Controladores
+│   ├── models/         # Modelos (lógica de datos)
+│   └── views/          # Vistas (HTML)
+│
+├── .gitignore          # Archivos a ignorar por Git
+└── README.md           # Este archivo
+```
+
+- **app/controllers**: Contiene los archivos de los controladores que manejan las solicitudes.
+- **app/models**: Contiene los modelos que se comunican con la base de datos.
+- **app/views**: Contiene las vistas en HTML que se presentan al usuario.
